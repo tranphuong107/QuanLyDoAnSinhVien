@@ -1,0 +1,57 @@
+@extends('pages_gv.master')
+
+@section('title', 'Giáo dục | Đổi mật khẩu')
+
+@section('additional_styles')
+    <link rel="stylesheet" href="{{ asset('css/doimatkhau.css')}}">
+@endsection
+
+@section('content')
+
+   <div class="box-changepass" style="padding:1rem 10rem">
+       <div class="bg-light m-auto" style="height:500px; box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 5%);border-radius:5px;">
+                <div class="w-100 mt-4 pt-4 " style="text-align:center">
+                    <h5 class ="mb-1" style="text-align:center; color:#0071C6;">ĐỔI MẬT KHẨU</h5>
+               </div>
+                    @if (Session::has('success'))
+                        <div class="success" id="message">
+                            {{ Session::get('success') }}
+                        </div>
+                    @endif
+                    @if (Session::has('error'))
+                        <div class="error" id="message">
+                            {{ Session::get('error') }}
+                        </div>
+                    @endif
+               
+                <form action="{{ URL::to('/change_password', ['ID' => $data->ID]) }}" method="POST" style="padding:0 5rem;margin-top:8%">
+                    @csrf
+                          <div class="box mt-4">
+                            <label for="" class="w-100">Mật khẩu hiện tại</label>
+                            <input class="form-control1 w-100"type="password"autocomplete="off" name="pass_old">
+                          </div>
+                          <div class="box">
+                            <label for="" class="w-100" >Mật khẩu mới</label>
+                            <input class="form-control1 w-100" id="mkmoi" type="password"autocomplete="off" name="pass_new">
+                          </div>
+                          <div class="box">
+                            <label for="" class="w-100">Nhập lại mật khẩu mới</label>
+                            <input class="form-control1 w-100" id="nhaplaimk" type="password"autocomplete="off" name="pass_new_check" >
+                          </div>
+                          <div class="container mt-5">
+                          <div class="change-pass" style="text-align:center;">
+                            <button type="submit" onclick="handleChangePass()" style="padding: 0.5rem 3rem;">Cập nhật</button>
+                            {{-- <a  class="btn" onclick="handleChangePass()" style="padding: 0.5rem 3rem;">Cập nhật</a><!-- <button style="padding: 0.5rem 3rem" onclick="handleChangePass()">Cập nhật</button> --> --}}
+                          </div>
+                        </div>
+                        
+               </form> 
+        </div>
+   </div>
+          <div class="popup-message error" id="popup-error">
+                    <p id="message">Vui lòng nhập đủ thông tin</p>
+               </div> 
+@endsection
+@section('scripts')
+<script src="{{asset('js\doimatkhau.js')}}"></script>
+@endsection

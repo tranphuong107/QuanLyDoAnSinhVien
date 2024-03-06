@@ -1,0 +1,31 @@
+.register a{
+    background-color: #364150;
+    color:#fff;
+    border-radius:10px;
+    width:200px;
+    border:0;
+}
+.register a:hover{
+    background-color: #1930B0;
+    color:#fff;
+    opacity: 0.7;
+    transition: all .5s;
+}
+textarea{
+    resize: none;
+    height:200px;
+}
+.content-form{
+    width: 70%;
+    padding:0 5rem;
+    font-weight:500;
+    margin: 0 auto;
+}
+.content-dk{
+    /* background-color:  #f8f9fa; */
+    background-color:  #fff;
+    border-radius:5px;
+    padding-bottom: 3rem;
+    padding: 3rem;
+    margin: 0 auto;
+}

@@ -1,0 +1,126 @@
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+  .content{
+    width: 97%;
+    height: 95%;
+    background-color: #f8f9fa;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 3rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 5%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* overflow-y: auto; */
+  }
+table thead {
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+.box-search{
+  background-color:#ccc;
+  border-radius:5px;
+  width: 30%;
+  background-color: #e9e9e9;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.box-search input {
+  outline: none;
+  background:transparent;
+  width:90%;
+  border:0;
+}
+/* table chung */
+.table-kehoach{
+  border: none;
+}
+.table-kehoach thead{
+  background-color: #2389D7;
+  color: #fff;
+  font-weight: 400 !important;
+  /* position: absolute; */
+}
+.myTable tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+.myTable tbody tr:nth-child(even) {
+  background: #F2F3F8;
+}
+.myTable{
+  height:500px;
+  overflow: auto;
+}
+.myTable::-webkit-scrollbar{
+  width: 0;
+}
+.myTable tbody tr th{
+ text-align: center;
+}
+.pagination{
+  position:absolute;
+  right:3%;
+  bottom:3%;
+}
+.eDisabled{
+display: none;
+}
+
+.my-button {
+  background-color: #D9D9D9;
+  border-radius:10px;
+  width:200px;
+  border:0;
+  padding: 0.5rem 3rem;
+  /* font-weight:500; */
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+
+}
+.my-button:hover{
+    color:#fff;
+    background-color: rgba(25, 48, 176,0.7);
+    transition: all .5s;
+}
+.popup-message {
+  border-radius: 10px;
+  min-width:300px;
+  height: 90px;
+  position: fixed;
+  bottom:20px;
+  right:40px;
+  color:#fff;
+  display: none;
+  transition: all .5s;
+  z-index: 300;
+}
+.popup-message p {
+  min-width: 100%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.error{
+  background-color: rgb(178,34,34,0.7);
+}
+.myTableTk{
+  height:500px;
+  overflow: auto;
+}
+.myTableTk::-webkit-scrollbar{
+  width: 0;
+}
+.myTableTk tbody tr th{
+ text-align: center;
+}
+

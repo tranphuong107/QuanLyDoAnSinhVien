@@ -1,0 +1,20 @@
+.menu-rectangle{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.menu-rectangle-content{
+    margin-bottom: 20px;
+    display: block;
+    height: 180px;
+    width: 100%;
+    background-color: #0071C6;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s !important;
+    transition: all .5s !important;
+    box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+    border-radius: 6px;
+}
